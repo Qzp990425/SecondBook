@@ -1,0 +1,262 @@
+/** 
+ *  This file is part of Slider Kit jQuery plugin.
+ *  http://www.kyrielles.net/sliderkit/
+ *  
+ *  Copyright (c) 2010-2012 Alan Frog
+ *  Licensed under the GNU General Public License
+ *  See <license.txt> or <http://www.gnu.org/licenses/>
+ *
+ */
+
+/* SliderKit
+-------------------------------------------------------------------------------------*/
+
+/* Plugin basics */
+
+.sliderkit {
+    display: none;
+    position: relative;
+    text-align: left;
+}
+
+.sliderkit a, .sliderkit a:hover {
+    text-decoration: none;
+}
+
+.sliderkit a:focus {
+    outline: none; /*optional*/
+}
+
+.sliderkit img {
+    border: 0px;
+}
+
+/* Navigation */
+
+.sliderkit .sliderkit-nav {
+    z-index: 10;
+    position: absolute;
+    text-align: center;
+}
+
+/* Navigation > Clip */
+
+.sliderkit .sliderkit-nav-clip {
+    width: 902px !important;
+    position: relative;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+.sliderkit .sliderkit-nav-clip ul {
+    position: relative;
+    left: 0px;
+    top: 0px;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Buttons */
+
+.sliderkit .sliderkit-btn {
+    z-index: 10;
+}
+
+/* Panels */
+
+.sliderkit .sliderkit-panel {
+    z-index: 1;
+    position: absolute;
+    overflow: hidden;
+}
+
+.sliderkit .sliderkit-panel-active {
+    z-index: 5;
+}
+
+.sliderkit .sliderkit-panel-old {
+    z-index: 4;
+}
+
+/* Panels > Overlay */
+
+.sliderkit .sliderkit-panel .sliderkit-panel-textbox {
+    position: absolute;
+    z-index: 1;
+}
+
+.sliderkit .sliderkit-panel .sliderkit-panel-text {
+    position: absolute;
+    z-index: 3;
+    top: 0px;
+    left: 0px;
+}
+
+.sliderkit .sliderkit-panel .sliderkit-panel-overlay {
+    position: absolute;
+    z-index: 2;
+    top: 0px;
+    left: 0px;
+}
+
+/* Counter */
+
+.sliderkit .sliderkit-count {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    z-index: 10;
+    padding: 5px;
+    color: #FFFFFF;
+    background: #000000;
+}
+
+/* Loader */
+
+.sliderkit .sliderkit-timer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    height: 3px;
+    background: #CCCCCC;
+}
+
+/* Photos Sliders
+-------------------------------------------------------------------------------------*/
+
+/* Photos gallery > With captions */
+
+.thumbnail-slider {
+    width: 960px;
+    height: 400px;
+}
+
+/* Navbar */
+
+.thumbnail-slider .sliderkit-nav {
+    left: 0px;
+    bottom: -96px;
+    width: 960px;
+}
+
+.thumbnail-slider .sliderkit-nav-clip ul li {
+    float: left;
+    display: block;
+    position: relative;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.thumbnail-slider .sliderkit-nav-clip ul li.sliderkit-selected {
+    border: 1px solid #00AEFF;
+}
+
+/* Buttons */
+
+.thumbnail-slider .sliderkit-btn {
+    position: absolute;
+    top: 0px;
+}
+
+.thumbnail-slider .sliderkit-btn a {
+    display: block;
+    height: 66px;
+    background: transparent url(../images/slider_thumbs_arrows.png) no-repeat center 0px;
+}
+
+.thumbnail-slider .sliderkit-btn span {
+    display: none;
+}
+
+.thumbnail-slider .sliderkit-btn-disable {
+    opacity: 0.3; /* can be set to any value until 1 */
+}
+
+.thumbnail-slider .sliderkit-btn-disable a:hover {
+    cursor: default;
+}
+
+/* Buttons > Navbar buttons */
+
+.thumbnail-slider .sliderkit-nav-btn {
+    width: 15px;
+}
+
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-prev {
+    left: 0px;
+}
+
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-next {
+    right: -3px;
+}
+
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-prev a {
+    background-position: 0px center;
+}
+
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-next a {
+    background-position: -18px center;
+}
+
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-prev a:hover,
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-prev a:focus {
+    background-position: -40px center;
+}
+
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-next a:hover,
+.thumbnail-slider .sliderkit-nav .sliderkit-nav-next a:focus {
+    background-position: -58px center;
+}
+
+/* Panel */
+
+.thumbnail-slider .sliderkit-panel {
+    top: 0px;
+    left: 0px;
+    width: 960px;
+    height: 400px;
+}
+
+/* Panel > Textbox */
+
+.thumbnail-slider .sliderkit-panel .sliderkit-panel-textbox {
+    bottom: 0px;
+    left: 0px;
+    width: 960px;
+    height: 50px;
+}
+
+.thumbnail-slider .sliderkit-panel .sliderkit-panel-text {
+    height: 50px;
+    padding: 15px 15px 15px 22px;
+    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color:#FFFFFF;
+    text-shadow: 0px 1px 0px #000000;
+}
+
+.thumbnail-slider .sliderkit-panel .sliderkit-panel-text a {
+    color: #FFFFFF;
+    border-bottom: 1px dotted #FFFFFF;
+}
+
+.thumbnail-slider .sliderkit-panel .sliderkit-panel-text a:hover {
+    color: #FFFFFF;
+}
+    
+.thumbnail-slider .sliderkit-panel .sliderkit-panel-text h4 {
+    height: auto;
+    margin: 0px 0px 7px;
+    line-height: 11px;
+    font-weight: bold;
+    border: none;
+}
+
+.thumbnail-slider .sliderkit-panel .sliderkit-panel-overlay{
+    width: 960px;
+    height: 50px;
+    background: #000000;
+    opacity: 0.8;
+}

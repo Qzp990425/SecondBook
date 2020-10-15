@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+
+<mapper namespace="com.test.dao.TalkMapper">
+
+    <select id="getTalkById" resultType="com.test.entity.Talk">
+        select * from talk where buyId = #{param1} and soldId = #{param2}
+    </select>
+	
+	<select id="insertTalk" resultType="com.test.entity.Talk">
+       insert into talk(buyId,soldId,content,createTime,status) values(#{buyId},#{soldId},#{content},#{createTime},#{status})
+    </select>
+    
+    <select id="getSoldUser" resultType="com.test.entity.User">
+        select distinct soldId as uid from talk where buyId = #{buyId}
+    </select>
+    
+    <select id="getBuyUser" resultType="com.test.entity.User">
+        select distinct buyId as uid from talk where soldId = #{soldId}
+    </select>
+    
+    
+    
+</mapper>

@@ -1,0 +1,612 @@
+
+/* ----------------------------------------------------------------------------------*/
+/* ---------->>> PRICING TABLE
+/* ----------------------------------------------------------------------------------*/
+
+/* Base */
+
+.pricing-table {
+    width: 960px;
+    height: 100%;
+    margin-bottom: 40px;
+}
+
+/* Lists */
+
+.pricing-table ul {
+    margin: 0px;
+    padding: 0px !important;
+    list-style-type: none !important;
+}
+
+.pricing-table li {
+    margin: 0px;
+    padding: 0px !important;
+    list-style-type: none !important;
+}
+
+/* Div aligns */
+
+.pricing-table .center{
+    text-align: center;
+    line-height: normal !important;
+}
+
+.pricing-table .caption-column {
+    line-height: normal !important;
+}
+    
+/* Headings
+-------------------------------------------------------------------------------------*/
+
+/* Common styles */
+
+.pricing-table h1,
+.pricing-table h2,
+.pricing-table h3 {
+    color: #FFFFFF;
+    text-shadow: 0px 1px 0px #0067AC;
+}
+
+.pricing-table h1 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 40px;
+    margin-top: 5px;
+}
+
+/* Columns
+-------------------------------------------------------------------------------------*/
+
+/* Header row 1 */
+
+.pricing-table .caption-column li.header-row-1 ,
+.pricing-table .column-1 li.header-row-1,
+.pricing-table .column-2 li.header-row-1,
+.pricing-table .column-3 li.header-row-1,
+.pricing-table .column-4 li.header-row-1,
+.pricing-table .column-5 li.header-row-1 {
+    height: 35px;
+    width: 100%;
+    padding: 10px 0px 0px 0px !important;
+}
+
+/* Decor light line */
+
+.pricing-table .caption-column li.header-row-line,
+.pricing-table .column-1 li.header-row-line,
+.pricing-table .column-2 li.header-row-line,
+.pricing-table .column-3 li.header-row-line,
+.pricing-table .column-4 li.header-row-line,
+.pricing-table .column-5 li.header-row-line {
+    height: 1px;
+    width: 100%;
+    float: left;
+}
+
+/* Header row 2 */
+
+.pricing-table .caption-column li.header-row-2,
+.pricing-table .column-1 li.header-row-2,
+.pricing-table .column-2 li.header-row-2,
+.pricing-table .column-3 li.header-row-2,
+.pricing-table .column-4 li.header-row-2,
+.pricing-table .column-5 li.header-row-2 {
+    height: 88px;
+    width: 100%;
+    padding: 5px 0px 7px 0px !important;
+}
+
+/* Caption correction */
+
+.pricing-table .caption-column li.header-row-2 {   
+    height: 88px;
+    width: 100%;
+    padding: 5px 0px 8px 10px !important;
+    line-height: 40px !important;
+}
+
+/* Caption Column
+-------------------------------------------------------------------------------------*/
+
+.pricing-table .caption-column {
+    width: 210px;
+    height: 100%;
+    float: left;
+}
+
+/* Column style 1 */
+
+.pricing-table .column-1 {
+    width: 150px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Column style 2 */
+
+.pricing-table .column-2 {
+    width: 150px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}   
+
+/* Column style 3 */
+
+.pricing-table .column-3 {
+    width: 150px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Column style 4 */
+
+.pricing-table .column-4 {
+    width: 150px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Column style 5 */
+
+.pricing-table .column-5 {
+    width: 150px;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Columns shadows */
+
+div.column-shadow {
+    width: 22px;
+    height: 350px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    background: transparent url(../images/table_column_shadow.png) no-repeat;
+}
+
+/* Column Hovers
+-------------------------------------------------------------------------------------*/
+
+/* Common styles */
+
+.pricing-table .column-1:hover li.row-style-1,
+.pricing-table .column-2:hover li.row-style-1,
+.pricing-table .column-3:hover li.row-style-1,
+.pricing-table .column-4:hover li.row-style-1,
+.pricing-table .column-5:hover li.row-style-1,
+.pricing-table .column-1:hover li.row-style-2,
+.pricing-table .column-2:hover li.row-style-3,
+.pricing-table .column-3:hover li.row-style-2,
+.pricing-table .column-4:hover li.row-style-3,
+.pricing-table .column-5:hover li.row-style-2 {
+    color: #FFFFFF;
+    text-shadow: none;
+}
+
+.pricing-table .column-1:hover li.row-style-1 a,
+.pricing-table .column-2:hover li.row-style-1 a,
+.pricing-table .column-3:hover li.row-style-1 a,
+.pricing-table .column-4:hover li.row-style-1 a,
+.pricing-table .column-5:hover li.row-style-1 a,
+.pricing-table .column-1:hover li.row-style-2 a,
+.pricing-table .column-2:hover li.row-style-3 a,
+.pricing-table .column-3:hover li.row-style-2 a,
+.pricing-table .column-4:hover li.row-style-3 a,
+.pricing-table .column-5:hover li.row-style-2 a {
+    color: #FFFFFF;
+    text-shadow: 0px 1px 0px #0067AC;
+}
+
+/* Data Rows
+-------------------------------------------------------------------------------------*/
+
+/* Common styles */
+
+.pricing-table li.row-style-1,
+.pricing-table li.row-style-2,
+.pricing-table li.row-style-3 {
+    width: 100%;
+    height: 100%;
+    min-height: 28px;
+    padding-top: 12px !important;
+    float: left;
+    
+    /* Transitions */
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease; 
+}
+
+.pricing-table li.row-style-1 span,
+.pricing-table li.row-style-2 span,
+.pricing-table li.row-style-3 span {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+/* White */
+
+.pricing-table li.row-style-1 {
+    background-color: #FFFFFF;
+}
+
+/* Lighter gray */
+
+.pricing-table li.row-style-2 {
+    background-color: #F6F6F6;
+}
+
+/* Darker gray */
+
+.pricing-table li.row-style-3 {
+    background-color: #EBEBEB;
+}
+
+/* Rows shadows */
+
+.pricing-table .caption-column .row-style-1 {
+    background: #FFFFFF url(../images/table_caption_shadow.png) repeat-y top right;
+}
+
+.pricing-table .caption-column .row-style-3 {
+    background: #EBEBEB url(../images/table_caption_shadow.png) repeat-y top right;
+}
+
+/* Column Style 1
+-------------------------------------------------------------------------------------*/
+
+/* Header row 1 */
+
+.pricing-table .column-1 li.header-row-1 {
+    border-bottom: 1px solid #4283B2;
+    background-color: #569DC2; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #70BBD4, #5399C0); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70BBD4', endColorstr='#5399C0'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70BBD4', endColorstr='#5399C0'); /* IE8 */
+    background: -ms-linear-gradient(top, #70BBD4, #5399C0); /* IE9 */
+    background: -moz-linear-gradient(top, #70BBD4, #5399C0); /* Firefox */ 
+    background: -o-linear-gradient(top, #70BBD4, #5399C0); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #70BBD4, #5399C0); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #70BBD4), color-stop(1, #5399C0)); /* Chrome 10, Safari */    
+}
+
+/* Decor light line */
+
+.pricing-table .column-1 li.header-row-line {
+    background-color: #98D1E2; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(left, #98D1E2, #C7E6EF 50%, #98D1E2); /* W3C */
+    background: -ms-linear-gradient(left, #98D1E2, #C7E6EF 50%, #98D1E2); /* IE9 */
+    background: -moz-linear-gradient(left, #98D1E2, #C7E6EF 50%, #98D1E2); /* Firefox */ 
+    background: -o-linear-gradient(left, #98D1E2, #C7E6EF 50%, #98D1E2); /* Opera 11  */
+    background: -webkit-linear-gradient(left, #98D1E2, #C7E6EF 50%, #98D1E2); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #98D1E2), color-stop(0.5, #C7E6EF), color-stop(1, #98D1E2)); /* Chrome 10, Safari */
+}
+
+/* Header row 2 */
+
+.pricing-table .column-1 li.header-row-2, .pricing-table .column-1 li.footer-row {
+    background-color: #569DC2; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #72B9D3, #569DC2); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72B9D3', endColorstr='#569DC2'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#72B9D3', endColorstr='#569DC2'); /* IE8 */
+    background: -ms-linear-gradient(top, #72B9D3, #569DC2); /* IE9 */
+    background: -moz-linear-gradient(top, #72B9D3, #569DC2); /* Firefox */ 
+    background: -o-linear-gradient(top, #72B9D3, #569DC2); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #72B9D3, #569DC2); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #72B9D3), color-stop(1, #569DC2)); /* Chrome 10, Safari */    
+}
+    
+/* Column Style 2
+-------------------------------------------------------------------------------------*/
+
+/* Header row 1 */
+
+.pricing-table .column-2 li.header-row-1 {
+    border-bottom: 1px solid #2E639F;
+    background-color: #3C82B3; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #4EA8CA, #397DB0); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4EA8CA', endColorstr='#397DB0'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4EA8CA', endColorstr='#397DB0'); /* IE8 */
+    background: -ms-linear-gradient(top, #4EA8CA, #397DB0); /* IE9 */
+    background: -moz-linear-gradient(top, #4EA8CA, #397DB0); /* Firefox */ 
+    background: -o-linear-gradient(top, #4EA8CA, #397DB0); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #4EA8CA, #397DB0); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4EA8CA), color-stop(1, #397DB0)); /* Chrome 10, Safari */    
+}
+
+/* Decor light line */
+
+.pricing-table .column-2 li.header-row-line {
+    background-color: #6CC5DB; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(left, #6CC5DB, #9CE0EC 50%, #6CC5DB); /* W3C */
+    background: -ms-linear-gradient(left, #6CC5DB, #9CE0EC 50%, #6CC5DB); /* IE9 */
+    background: -moz-linear-gradient(left, #6CC5DB, #9CE0EC 50%, #6CC5DB); /* Firefox */ 
+    background: -o-linear-gradient(left, #6CC5DB, #9CE0EC 50%, #6CC5DB); /* Opera 11  */
+    background: -webkit-linear-gradient(left, #6CC5DB, #9CE0EC 50%, #6CC5DB); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #6CC5DB), color-stop(0.5, #9CE0EC), color-stop(1, #6CC5DB)); /* Chrome 10, Safari */
+}
+
+/* Header row 2 */
+
+.pricing-table .column-2 li.header-row-2, .pricing-table .column-2 li.footer-row {
+    background-color: #3C82B3; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #4FA5C8, #3C82B3); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4FA5C8', endColorstr='#3C82B3'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4FA5C8', endColorstr='#3C82B3'); /* IE8 */
+    background: -ms-linear-gradient(top, #4FA5C8, #3C82B3); /* IE9 */
+    background: -moz-linear-gradient(top, #4FA5C8, #3C82B3); /* Firefox */ 
+    background: -o-linear-gradient(top, #4FA5C8, #3C82B3); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #4FA5C8, #3C82B3); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #4FA5C8), color-stop(1, #3C82B3)); /* Chrome 10, Safari */
+}
+
+/* Column Style 3
+-------------------------------------------------------------------------------------*/
+
+/* Header row 1 */
+
+.pricing-table .column-3 li.header-row-1 {
+    border-bottom: 1px solid #244F8B;
+    background-color: #2F68A3; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #3D87BF, #2D649F); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D87BF', endColorstr='#2D649F'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D87BF', endColorstr='#2D649F'); /* IE8 */
+    background: -ms-linear-gradient(top, #3D87BF, #2D649F); /* IE9 */
+    background: -moz-linear-gradient(top, #3D87BF, #2D649F); /* Firefox */ 
+    background: -o-linear-gradient(top, #3D87BF, #2D649F); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #3D87BF, #2D649F); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3D87BF), color-stop(1, #2D649F)); /* Chrome 10, Safari */    
+}
+
+/* Decor light line */
+
+.pricing-table .column-3 li.header-row-line {
+    background-color: #55B3D4; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(left, #55B3D4, #7BD5E8 50%, #55B3D4); /* W3C */
+    background: -ms-linear-gradient(left, #55B3D4, #7BD5E8 50%, #55B3D4); /* IE9 */
+    background: -moz-linear-gradient(left, #55B3D4, #7BD5E8 50%, #55B3D4); /* Firefox */ 
+    background: -o-linear-gradient(left, #55B3D4, #7BD5E8 50%, #55B3D4); /* Opera 11  */
+    background: -webkit-linear-gradient(left, #55B3D4, #7BD5E8 50%, #55B3D4); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #55B3D4), color-stop(0.5, #7BD5E8), color-stop(1, #55B3D4)); /* Chrome 10, Safari */
+}
+
+/* Header row 2 */
+
+.pricing-table .column-3 li.header-row-2, .pricing-table .column-3 li.footer-row {
+    background-color: #2F68A3; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #3E8ABD, #2F68A3); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3E8ABD', endColorstr='#2F68A3'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3E8ABD', endColorstr='#2F68A3'); /* IE8 */
+    background: -ms-linear-gradient(top, #3E8ABD, #2F68A3); /* IE9 */
+    background: -moz-linear-gradient(top, #3E8ABD, #2F68A3); /* Firefox */ 
+    background: -o-linear-gradient(top, #3E8ABD, #2F68A3); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #3E8ABD, #2F68A3); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3E8ABD), color-stop(1, #2F68A3)); /* Chrome 10, Safari */    
+}
+
+/* Column Style 4
+-------------------------------------------------------------------------------------*/
+
+/* Header row 1 */
+
+.pricing-table .column-4 li.header-row-1 {
+    border-bottom: 1px solid #1D4280;
+    background-color: #26579A; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #3171B8, #245496); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3171B8', endColorstr='#245496'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3171B8', endColorstr='#245496'); /* IE8 */
+    background: -ms-linear-gradient(top, #3171B8, #245496); /* IE9 */
+    background: -moz-linear-gradient(top, #3171B8, #245496); /* Firefox */ 
+    background: -o-linear-gradient(top, #3171B8, #245496); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #3171B8, #245496); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3171B8), color-stop(1, #245496)); /* Chrome 10, Safari */    
+}
+
+/* Decor light line */
+
+.pricing-table .column-4 li.header-row-line {
+    background-color: #4599CF; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(left, #4599CF, #63C7E5 50%, #4599CF); /* W3C */
+    background: -ms-linear-gradient(left, #4599CF, #63C7E5 50%, #4599CF); /* IE9 */
+    background: -moz-linear-gradient(left, #4599CF, #63C7E5 50%, #4599CF); /* Firefox */ 
+    background: -o-linear-gradient(left, #4599CF, #63C7E5 50%, #4599CF); /* Opera 11  */
+    background: -webkit-linear-gradient(left, #4599CF, #63C7E5 50%, #4599CF); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #4599CF), color-stop(0.5, #63C7E5), color-stop(1, #4599CF)); /* Chrome 10, Safari */
+}
+
+/* Header row 2 */
+
+.pricing-table .column-4 li.header-row-2, .pricing-table .column-4 li.footer-row {
+    background-color: #26579A; /* background color for non-css3 browsers */
+    
+    /* Gradient */
+    background-image: linear-gradient(top, #3373B6, #26579A); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3373B6', endColorstr='#26579A'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3373B6', endColorstr='#26579A'); /* IE8 */
+    background: -ms-linear-gradient(top, #3373B6, #26579A); /* IE9 */
+    background: -moz-linear-gradient(top, #3373B6, #26579A); /* Firefox */ 
+    background: -o-linear-gradient(top, #3373B6, #26579A); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #3373B6, #26579A); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #3373B6), color-stop(1, #26579A)); /* Chrome 10, Safari */    
+}
+
+/* Column Style 5
+-------------------------------------------------------------------------------------*/
+
+/* Header row 1 */
+
+.pricing-table .column-5 li.header-row-1 {
+    border-bottom: 1px solid #153055;
+    background-color: #265799; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #265799, #1D4377); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#265799', endColorstr='#1D4377'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#265799', endColorstr='#1D4377'); /* IE8 */
+    background: -ms-linear-gradient(top, #265799, #1D4377); /* IE9 */
+    background: -moz-linear-gradient(top, #265799, #1D4377); /* Firefox */ 
+    background: -o-linear-gradient(top, #265799, #1D4377); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #265799, #1D4377); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #265799), color-stop(1, #1D4377)); /* Chrome 10, Safari */    
+}
+
+/* Decor light line */
+
+.pricing-table .column-5 li.header-row-line {
+    background-color: #3084BA; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(left, #3084BA, #21A2C8 50%, #3084BA); /* W3C */
+    background: -ms-linear-gradient(left, #3084BA, #21A2C8 50%, #3084BA); /* IE9 */
+    background: -moz-linear-gradient(left, #3084BA, #21A2C8 50%, #3084BA); /* Firefox */ 
+    background: -o-linear-gradient(left, #3084BA, #21A2C8 50%, #3084BA); /* Opera 11  */
+    background: -webkit-linear-gradient(left, #3084BA, #21A2C8 50%, #3084BA); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0, #3084BA), color-stop(0.5, #21A2C8), color-stop(1, #3084BA)); /* Chrome 10, Safari */
+}
+
+/* Header row 2 */
+
+.pricing-table .column-5 li.header-row-2, .pricing-table .column-5 li.footer-row {
+    background-color: #1D4377; /* background color for non-css3 browsers */
+
+    /* Gradient */
+    background-image: linear-gradient(top, #265799, #1D4377); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#265799', endColorstr='#1D4377'); /* IE5.5 - 7 */
+    -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#265799', endColorstr='#1D4377'); /* IE8 */
+    background: -ms-linear-gradient(top, #265799, #1D4377); /* IE9 */
+    background: -moz-linear-gradient(top, #265799, #1D4377); /* Firefox */ 
+    background: -o-linear-gradient(top, #265799, #1D4377); /* Opera 11  */
+    background: -webkit-linear-gradient(top, #265799, #1D4377); /* Chrome 11  */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #265799), color-stop(1, #1D4377)); /* Chrome 10, Safari */    
+}
+    
+/* Column Hovers
+-------------------------------------------------------------------------------------*/
+
+/* Column 1 */
+
+.pricing-table .column-1:hover li.row-style-1 { background-color: #66ADCC; }
+.pricing-table .column-1:hover li.row-style-2 { background-color: #569DC2; }
+
+/* Column 2 */
+
+.pricing-table .column-2:hover li.row-style-1 { background-color: #4797C0; }
+.pricing-table .column-2:hover li.row-style-3 { background-color: #3C82B3; }
+
+/* Column 3 */
+
+.pricing-table .column-3:hover li.row-style-1 { background-color: #377BB2; }
+.pricing-table .column-3:hover li.row-style-2 { background-color: #2F68A3; }
+
+/* Column 4 */
+
+.pricing-table .column-4:hover li.row-style-1 { background-color: #2C67AA; }
+.pricing-table .column-4:hover li.row-style-3 { background-color: #26579A; }
+
+/* Column 5 */
+
+.pricing-table .column-5:hover li.row-style-1 { background-color: #23518F; }
+.pricing-table .column-5:hover li.row-style-2 { background-color: #1F477E; }
+
+/* Footer
+-------------------------------------------------------------------------------------*/
+
+/* Common styles */
+
+.pricing-table li.footer-row {
+    width: 100%;
+    height: 30px;
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+    float: left;
+    /* transitions */
+    -webkit-transition: all 0.15s ease;
+    -moz-transition: all 0.15s ease;
+    -o-transition: all 0.15s ease;
+    -ms-transition: all 0.15s ease;
+    transition: all 0.15s ease;
+}
+
+.pricing-table li.footer-row a {
+    margin-left: 32px;
+}   
+
+/* Column Ribbons
+-------------------------------------------------------------------------------------*/
+
+/* Base */
+
+.column-ribbon {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 0;
+}
+
+/* Ribbon styles */
+
+.ribbon-best { background: url(../images/ribbons/best.png); }
+.ribbon-buy { background: url(../images/ribbons/buy.png); }
+.ribbon-free { background: url(../images/ribbons/free.png); }
+.ribbon-free-caps { background: url(../images/ribbons/free_caps.png); }
+.ribbon-fresh { background: url(../images/ribbons/fresh.png); }
+.ribbon-gift-caps { background: url(../images/ribbons/gift_caps.png); }
+.ribbon-heart { background: url(../images/ribbons/heart.png); }
+.ribbon-hot { background: url(../images/ribbons/hot.png); }
+.ribbon-hot-caps { background: url(../images/ribbons/hot_caps.png); }
+.ribbon-new { background: url(../images/ribbons/new.png); }
+.ribbon-new-caps { background: url(../images/ribbons/new_caps.png); }
+.ribbon-no1 { background: url(../images/ribbons/no1.png); }
+.ribbon-off5 { background: url(../images/ribbons/off5.png); }
+.ribbon-off10 { background: url(../images/ribbons/off10.png); }
+.ribbon-off15 { background: url(../images/ribbons/off15.png); }
+.ribbon-off20 { background: url(../images/ribbons/off20.png); }
+.ribbon-off25 { background: url(../images/ribbons/off25.png); }
+.ribbon-off30 { background: url(../images/ribbons/off30.png); }
+.ribbon-off35 { background: url(../images/ribbons/off35.png); }
+.ribbon-off40 { background: url(../images/ribbons/off40.png); }
+.ribbon-off50 { background: url(../images/ribbons/off50.png); }
+.ribbon-off75 { background: url(../images/ribbons/off75.png); }
+.ribbon-pack { background: url(../images/ribbons/pack.png); }
+.ribbon-pro { background: url(../images/ribbons/pro.png); }
+.ribbon-sale { background: url(../images/ribbons/sale.png); }
+.ribbon-save { background: url(../images/ribbons/save.png); }
+.ribbon-save-caps { background: url(../images/ribbons/save_caps.png); }
+.ribbon-top { background: url(../images/ribbons/top.png); }
+.ribbon-top-caps { background: url(../images/ribbons/top_caps.png); }
+.ribbon-trial { background: url(../images/ribbons/trial.png); }

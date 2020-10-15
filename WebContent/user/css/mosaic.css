@@ -1,0 +1,270 @@
+/*
+    Mosaic - Sliding Boxes and Captions jQuery Plugin
+    Version 1.0.1
+    www.buildinternet.com/project/mosaic
+    
+    By Sam Dunn / One Mighty Roar (www.onemightyroar.com)
+    Released under MIT License / GPL License
+*/
+
+/* Mosaic
+-------------------------------------------------------------------------------------*/
+
+/* Mosaic basics */
+
+.mosaic-block {
+    float: left;
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF url(../images/loader.gif) no-repeat center center;
+}
+
+/* Mosaic block dimensions (you can add your dimensions below)
+    Note: plus 2px based on image actual size if it's in .imagebox div
+*/
+
+/* Large image */
+
+.mosaic-large .mosaic-block {
+    width: 436px;
+    height: 288px;
+}
+
+/* Medium image */
+
+.mosaic-medium .mosaic-block {
+    width: 266px;
+    height: 174px;
+}
+
+/* Small image */
+
+.mosaic-small .mosaic-block {
+    width: 181px;
+    height: 117px;
+}
+
+/* Tiny image */
+
+.mosaic-tiny .mosaic-block {
+    width: 118px;
+    height: 75px;
+}
+
+/* Wide image (without .imagebox div) */
+
+.mosaic-wide .mosaic-block {
+    width: 210px;
+    height: 105px;
+}
+
+/* Two custom dimensions (for only features page) */
+
+.mosaic-feature-overlays .mosaic-block {
+    width: 188px;
+    height: 123px;
+}
+
+.mosaic-feature-captions .mosaic-block {
+    width: 428px;
+    height: 222px;
+}
+
+
+    .mosaic-backdrop {
+        display: none;
+        position: absolute;
+        top: 0px;
+        height: 100%;
+        width: 100%;
+        background: #F5F5F5;
+    }
+    
+    .mosaic-overlay {
+        display: none;
+        z-index: 5;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #F5F5F5;
+    }
+    
+.mosaic-details, .mosaic-caption {
+    margin: 10px 12px;
+    position: absolute;
+}   
+    
+.mosaic-details h4 { 
+    color: #FFFFFF; 
+    text-shadow: 0px 1px 0px #000000;
+}
+
+.mosaic-details p {
+    color: #00AEFF;
+    text-shadow: 0px 1px 0px #000000;
+}
+
+.mosaic-caption h4 {
+    color: #2E2633; 
+    text-shadow: 0px 1px 0px #FFFFFF;
+    margin-bottom: 5px;
+}
+
+.mosaic-caption p {
+   color: #000000;
+   text-shadow: 0px 1px 0px #FFFFFF;
+}
+
+.mosaic-caption span {
+   display: block;
+   text-align: justify;
+}
+
+.mosaic-caption .imagebox {
+    margin: 0px 20px 5px 0px !important;
+    padding: 3px;
+}
+
+.bottom-caption {
+    bottom: 0px;
+}
+
+.top-caption {
+    top: 0px;
+}
+
+/* Custom animation styles (you can remove/add any styles below) */
+        
+.zoom .mosaic-overlay {
+    background: #000000 url(../images/zoom_overlay.png) no-repeat center center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    display: none;
+}
+
+.play .mosaic-overlay {
+    background: #000000 url(../images/play_overlay.png) no-repeat center center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    display: none;
+}
+
+.link .mosaic-overlay {
+    background: #000000 url(../images/link_overlay.png) no-repeat center center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    display: none;
+}
+
+.info .mosaic-overlay {
+    background: #000000 url(../images/info_overlay.png) no-repeat center center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    display: none;
+}
+
+.plus .mosaic-overlay {
+    background: #000000 url(../images/plus_overlay.png) no-repeat center center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    display: none;
+}
+
+.tooltip .mosaic-overlay {
+    background: #000000 url(../images/tooltip_overlay.png) no-repeat center center;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    display: none;
+}
+
+.fade .mosaic-overlay {
+    background: #000000;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    display: none;
+}
+
+.fade-black .mosaic-overlay {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    background: url(../images/black_overlay.png);
+}
+
+.fade-white .mosaic-overlay {
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    background: url(../images/white_overlay.png);
+}
+
+.lower-panel .mosaic-overlay {
+    bottom: -40px;
+    height: 40px;
+    background: #F5F5F5;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    overflow: hidden;
+}
+
+    .lower-panel .mosaic-overlay:hover {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+    }
+
+.upper-panel .mosaic-overlay {
+    top: -40px;
+    height: 40px;
+    background: #F5F5F5;
+    opacity: 0.8;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    overflow: hidden;
+}
+
+    .upper-panel .mosaic-overlay:hover {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+    }
+    
+.lower-panel-outside .mosaic-overlay {
+    bottom: -40px;
+    height: 80px;
+    opacity: 0.8;
+    background: #F5F5F5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    overflow: hidden;
+}
+        
+    .lower-panel-outside .mosaic-overlay:hover {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+    }
+    
+.upper-panel-outside .mosaic-overlay {
+    top: -40px;
+    height: 80px;
+    opacity: 0.8;
+    background: #F5F5F5;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter: alpha(opacity=80);
+    overflow: hidden;
+}
+        
+    .upper-panel-outside .mosaic-overlay:hover {
+        opacity: 1;
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+        filter: alpha(opacity=100);
+    }

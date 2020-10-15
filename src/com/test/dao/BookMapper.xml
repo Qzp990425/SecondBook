@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.test.dao.BookMapper">
+	<select id="getAllBook" resultType="com.test.entity.Book">
+		select * from book
+	</select>
+	
+	<select id="getBookByType" resultType="com.test.entity.Book">
+		select * from book where type = #{type}
+	</select>
+	  
+	
+	<select id="getBookOnSale" resultType="com.test.entity.Book">
+		select * from book where status = 0
+	</select>
+	
+	<select id="getBookOnSaleByType" resultType="com.test.entity.Book">
+		select * from book where status = 0 and type = #{type}
+	</select> 
+	
+	<insert id="insertBook" parameterType="com.test.entity.Book">
+		insert into book(uuid,name,price,type,number,nowPrice,status,introduction,uid) values(#{uuid},#{name},#{price},#{type},#{number},#{nowPrice},#{status},#{introduction},#{uid})
+	</insert>
+	
+	<update id="putBook">
+		update book set status = 1 where bid = #{bid}
+	</update>
+	
+	<update id="pushBook">
+		update book set status = 0 where bid = #{bid}
+	</update>
+	
+	<select id="getBookByBid" resultType="com.test.entity.Book">
+		select * from book where bid = #{bid}
+	</select>
+	
+	<select id="getBookByName" resultType="com.test.entity.Book">
+		select * from book where name like '%${value}%'
+	</select>
+	
+	<update id="updateNum" parameterType="com.test.entity.Book">
+		update book set number = #{number} where bid = #{bid}
+	</update>
+	
+	<select id="getAllBookOfMe" resultType="com.test.entity.Book">
+		select * from book where uid = #{uid}
+	</select>
+	
+	<select id="getBookByTypeOfMe" resultType="com.test.entity.Book">
+		select * from book where type = #{param1} and uid = #{param2}
+	</select>
+	
+	
+</mapper>
